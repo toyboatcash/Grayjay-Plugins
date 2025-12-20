@@ -421,4 +421,4 @@ class PlatformHomePager {
   }
 }
 
-const source = new SunoSource();
+var source = new SunoSource();
