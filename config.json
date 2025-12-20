@@ -6,7 +6,7 @@
   "sourceUrl": "https://raw.githubusercontent.com/toyboatcash/grayjay-suno.com/refs/heads/main/config.json",
   "repositoryUrl": "https://github.com/toyboatcash/grayjay-source-suno",
   "scriptUrl": "./script.js",
-  "version": 6,
+  "version": 7,
   "iconUrl": "./icon.png",
   "id": "7a8b9c0d-1e2f-4a5b-6c7d-8e9f0a1b2c3d",
   "scriptSignature": "",

@@ -491,5 +491,3 @@ class PlatformHomePager {
     return this.source.getHome();
   }
 }
-
-const source = new SunoSource();
