@@ -2,9 +2,6 @@ const PLATFORM_ID = "Suno";
 
 class SunoSource {
   constructor() {
-    this.http = new Http();
-    this.domParser = new DOMParser();
-    this.utilities = new Utilities();
   }
 
   enable(settings) {
@@ -24,8 +21,7 @@ class SunoSource {
     const results = [];
     
     try {
-      // Get popular songs
-      const popularResponse = this.http.GET("https://studio-api.suno.ai/api/search/?q=&type=song&limit=30", {});
+      const popularResponse = http.GET("https://studio-api.suno.ai/api/search/?q=&type=song&limit=30", {});
       const popularData = JSON.parse(popularResponse.body);
       
       if (popularData.clips && Array.isArray(popularData.clips)) {
@@ -64,7 +60,7 @@ class SunoSource {
         searchUrl += "&type=playlist";
       }
 
-      const response = this.http.GET(searchUrl, {});
+      const response = http.GET(searchUrl, {});
       const data = JSON.parse(response.body);
 
       if (data.clips && Array.isArray(data.clips)) {
@@ -105,7 +101,7 @@ class SunoSource {
 
   getPlaylist(id) {
     try {
-      const response = this.http.GET("https://studio-api.prod.suno.com/api/playlists/" + id + "/", {});
+      const response = http.GET("https://studio-api.prod.suno.com/api/playlists/" + id + "/", {});
       const data = JSON.parse(response.body);
 
       const videos = [];
@@ -137,7 +133,7 @@ class SunoSource {
 
   getChannel(id) {
     try {
-      const response = this.http.GET("https://studio-api.prod.suno.com/api/profiles/" + id + "/recent_clips", {});
+      const response = http.GET("https://studio-api.prod.suno.com/api/profiles/" + id + "/recent_clips", {});
       const data = JSON.parse(response.body);
 
       const videos = [];
@@ -182,7 +178,7 @@ class SunoSource {
 
   getVideo(id) {
     try {
-      const response = this.http.GET("https://studio-api.prod.suno.com/api/clips/" + id + "/", {});
+      const response = http.GET("https://studio-api.prod.suno.com/api/clips/" + id + "/", {});
       const data = JSON.parse(response.body);
       return this._clipToVideo(data);
     } catch (e) {
@@ -421,4 +417,3 @@ class PlatformHomePager {
   }
 }
 
-var source = new SunoSource();
