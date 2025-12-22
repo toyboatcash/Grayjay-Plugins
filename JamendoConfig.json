@@ -1,0 +1,19 @@
+{
+  "name": "Jamendo Music",
+  "description": "Stream free music from Jamendo's library of Creative Commons and royalty-free tracks",
+  "author": "toyboatcash",
+  "authorUrl": "https://github.com/toyboatcash/Grayjay-jamendo.com",
+  "sourceUrl": "https://raw.githubusercontent.com/toyboatcash/Grayjay-jamendo.com/refs/heads/main/JamendoConfig.json",
+  "repositoryUrl": "https://github.com/toyboatcash/Grayjay-jamendo.com",
+  "scriptUrl": "./JamendoScript.js",
+  "version": 4,
+  "iconUrl": "https://www.jamendo.com/Client/assets/toolkit/images/icon/favicon.2773975185.ico",
+  "id": "5a8e4f3d-1c3a-4a1b-b4c2-0d5e6f7a8b9c",
+  "scriptSignature": "",
+  "scriptPublicKey": "",
+  "packages": ["Http"],
+  "allowEval": false,
+  "allowUrls": [
+    "api.jamendo.com"
+  ]
+}
