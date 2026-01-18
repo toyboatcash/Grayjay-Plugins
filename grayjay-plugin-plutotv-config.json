@@ -1,50 +1,56 @@
 {
-    "name": "Pluto TV",
-    "description": "Watch Pluto TV content including live and on-demand videos",
-    "version": "1.0.0",
+    "_tags": [
+        "working",
+        "unofficial",
+        "video",
+        "live"
+    ],
+    "name": "Pluto.tv",
+    "description": "Pluto.tv videos",
     "author": "toyboatcashe",
     "authorUrl": "https://github.com/toyboatcash",
     "platformUrl": "https://pluto.tv",
     "sourceUrl": "https://raw.githubusercontent.com/toyboatcash/Grayjay-Plugins/refs/heads/main/grayjay-plugin-plutotv-config.json",
-    "script": "./grayjay-plugin-plutotv-script.js",
-    "icon": "https://www.google.com/s2/favicons?domain=pluto.tv&sz=64",
-    "id": "plutotv-unofficial-01",
+    "repositoryUrl": "https://github.com/toyboatcash/Grayjay-Plugins",
+    "scriptUrl": "./grayjay-plugin-plutotv-script.js",
+    "version": 22,
+    "iconUrl": "https://www.google.com/s2/favicons?domain=pluto.tv&sz=64",
+    "id": "plutotv-uuid",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
     "allowEval": false,
     "allowAllHttpHeaderAccess": true,
-    "permissions": {
-        "http": {
-            "domains": [
-                "pluto.tv",
-                "*.pluto.tv",
-                "*.plutotv.net",
-                "silo-hybrik.pluto.tv.s3.amazonaws.com"
-            ]
-        }
-    },
-    "capabilities": {
-        "search": true,
-        "categories": true,
-        "channels": true,
-        "featured": true
-    },
-    "supportedClaimTypes": [2],
-    "enableLiveContent": true,
-    "settings": [
-        {
-            "id": "videoQuality",
-            "name": "Default Video Quality",
-            "type": "select",
-            "defaultValue": "auto",
-            "options": [
-                {"value": "auto", "name": "Auto (Recommended)"},
-                {"value": "1080", "name": "1080p"},
-                {"value": "720", "name": "720p"},
-                {"value": "480", "name": "480p"}
-            ]
-        }
+    "allowUrls": [
+        "pluto.tv",
+        "api.pluto.tv",
+        "service-vod.clusters.pluto.tv",
+        "boot.pluto.tv",
+        "siloh-fs.plutotv.net",
+        "siloh-ns1.plutotv.net",
+        "silo-hybrik.pluto.tv.s3.amazonaws.com"
     ],
-    "changelog": {
-        "1.0.0": "Initial release with basic functionality"
+    "supportedClaimTypes": [
+        2
+    ],
+    "enableLiveContent": true,
+    "authentication": {
+        "type": "bearer",
+        "headerName": "authorization",
+        "helpText": "Enter your Pluto TV Bearer token (optional, for on-demand content)"
     },
-    "updateUrl": "https://raw.githubusercontent.com/toyboatcash/Grayjay-Plugins/main/updates.json"
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial version"
+        ]
+    },
+    "_installUrl": "https://raw.githubusercontent.com/toyboatcash/Grayjay-Plugins/refs/heads/main/grayjay-plugin-plutotv-config.json",
+    "_feeds": {
+        "commits": "https://github.com/toyboatcash/Grayjay-Plugins/commits/main.atom",
+        "releases": "https://github.com/toyboatcash/Grayjay-Plugins/releases.atom"
+    }
 }
