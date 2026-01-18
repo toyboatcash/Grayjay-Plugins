@@ -1,0 +1,55 @@
+{
+    "_tags": [
+        "working",
+        "unofficial",
+        "video",
+        "archive"
+    ],
+    "name": "Archive.org",
+    "description": "Internet Archive video platform",
+    "author": "Cascade",
+    "authorUrl": "https://github.com/cascade-ai",
+    "platformUrl": "https://archive.org",
+    "sourceUrl": "https://github.com/toyboatcash/Grayjay-Plugins/grayjay-plugin-archiveorg-config.json",
+    "repositoryUrl": "https://github.com/toyboatcash/Grayjay-Plugins",
+    "scriptUrl": "./grayjay-plugin-archiveorg-script.js",
+    "version": 8,
+    "iconUrl": "https://www.google.com/s2/favicons?domain=archive.org&sz=64",
+    "id": "archiveorg-uuid",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser",
+        "Utilities"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        "archive.org"
+    ],
+    "supportedClaimTypes": [
+        2
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial version"
+        ],
+        "3": [
+            "Added support for multiple video sources and qualities"
+        ],
+        "4": [
+            "Fixed video URL construction to use direct server URLs and improved source sorting"
+        ],
+        "5": [
+            "Updated home page to show recent movies sorted by week"
+        ]
+    },
+    "_installUrl": "http://localhost:8035/grayjay-plugin-archiveorg/grayjay-plugin-archiveorg-config.json",
+    "_feeds": {
+        "commits": "https://github.com/cascade-ai/grayjay-plugin-archiveorg/commits/main.atom",
+        "releases": "https://github.com/cascade-ai/grayjay-plugin-archiveorg/releases.atom"
+    }
+}
