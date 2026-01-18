@@ -5,6 +5,7 @@
     "author": "toyboatcashe",
     "authorUrl": "https://github.com/toyboatcash",
     "platformUrl": "https://pluto.tv",
+    "sourceUrl": "https://raw.githubusercontent.com/toyboatcash/Grayjay-Plugins/refs/heads/main/grayjay-plugin-plutotv-config.json",
     "script": "./grayjay-plugin-plutotv-script.js",
     "icon": "https://www.google.com/s2/favicons?domain=pluto.tv&sz=64",
     "id": "plutotv-unofficial-01",
